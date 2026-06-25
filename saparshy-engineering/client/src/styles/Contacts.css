@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.contacts-page {
+  min-height: calc(100vh - 80px);
+  background-color: #fcfcfc;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 4rem;
+}
+
+.contacts-hero {
+  background-color: #0f1b2e;
+  background-image:
+    linear-gradient(rgba(232, 147, 15, 0.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 147, 15, 0.10) 1px, transparent 1px);
+  background-size: 36px 36px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.contacts-hero h1 {
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+}
+
+.contacts-hero p {
+  color: #c4cbd8;
+  font-size: 1.05rem;
+  max-width: 600px;
+}
+
+.contacts-container {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 3rem;
+  padding-top: 4rem;
+  align-items: start;
+}
+
+.contacts-info-col h2 {
+  color: #16213e;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contacts-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #444;
+  font-size: 1.02rem;
+}
+
+.contacts-list li svg {
+  color: #e8930f;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.contacts-list li a {
+  color: #16213e;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contacts-list li a:hover {
+  color: #e8930f;
+}
+
+.contacts-map-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.contacts-form-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+  padding: 2.5rem;
+}
+
+.contacts-form-card h2 {
+  color: #16213e;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+}
+
+@media (max-width: 900px) {
+  .contacts-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .contacts-hero { height: 200px; }
+  .contacts-hero h1 { font-size: 2.2rem; }
+  .contacts-form-card { padding: 1.8rem; }
+}

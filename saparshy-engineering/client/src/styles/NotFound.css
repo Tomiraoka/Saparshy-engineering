@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+.not-found-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  background-color: #fcfcfc;
+  padding: 2rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.not-found-content {
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 550px;
+  padding: 3rem 2.5rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.not-found-icon-wrapper {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #16213e 0%, #1f3a5f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.not-found-icon {
+  font-size: 3rem;
+  color: rgba(232, 147, 15, 0.5);
+}
+
+.not-found-code {
+  position: absolute;
+  bottom: -10px;
+  background: #e8930f;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 4px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.not-found-content h2 {
+  font-size: 1.8rem;
+  color: #16213e;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.not-found-content p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.not-found-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.not-found-btn {
+  background-color: #e8930f;
+  color: #fff;
+  font-size: 13px;
+  padding: 12px 35px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+}
+
+.not-found-btn:hover {
+  background-color: #c97a00;
+  box-shadow: 0 4px 12px rgba(232, 147, 15, 0.4);
+}
+
+@media (max-width: 550px) {
+  .not-found-content {
+    padding: 2rem 1.5rem;
+  }
+
+  .not-found-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .not-found-content p {
+    max-width: 100%;
+  }
+
+  .not-found-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .not-found-btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

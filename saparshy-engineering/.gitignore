@@ -1,0 +1,23 @@
+# Зависимости
+node_modules/
+
+# Переменные окружения
+.env
+.env.local
+
+# Сборка
+client/dist/
+client/build/
+
+# Загруженные пользователями файлы
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Логи
+*.log
+npm-debug.log*
+
+# IDE / OS
+.DS_Store
+.vscode/
+.idea/

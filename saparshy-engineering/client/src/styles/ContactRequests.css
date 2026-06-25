@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.requests-page {
+  min-height: calc(100vh - 80px);
+  background-color: #fcfcfc;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 4rem;
+}
+
+.requests-hero {
+  background-color: #16213e;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.requests-hero h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.requests-denied {
+  text-align: center;
+  padding: 6rem 1rem;
+}
+
+.requests-container {
+  padding-top: 3rem;
+}
+
+.requests-empty {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #666;
+}
+
+.requests-empty-icon {
+  font-size: 3.5rem;
+  color: #e8930f;
+  opacity: 0.6;
+  margin-bottom: 1rem;
+}
+
+.requests-table-wrapper {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  overflow-x: auto;
+}
+
+.requests-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.requests-table th {
+  text-align: left;
+  background: #16213e;
+  color: #fff;
+  padding: 14px 18px;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.requests-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.92rem;
+  color: #333;
+  vertical-align: top;
+}
+
+.requests-table tr:last-child td {
+  border-bottom: none;
+}
+
+.requests-name-cell {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.requests-contact-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.requests-contact-cell span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.requests-contact-cell svg {
+  color: #e8930f;
+  font-size: 0.85rem;
+}
+
+.requests-contact-cell a {
+  color: #16213e;
+  text-decoration: none;
+}
+
+.requests-contact-cell a:hover {
+  color: #e8930f;
+}
+
+.requests-message-cell {
+  max-width: 260px;
+  white-space: pre-wrap;
+  color: #555;
+}
+
+.requests-date-cell {
+  white-space: nowrap;
+  color: #777;
+}
+
+.status-select {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #e2e6ec;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #f5f6f8;
+  color: #16213e;
+}
+
+.status-select.status-new {
+  border-color: #e8930f;
+  color: #c97a00;
+  background: rgba(232, 147, 15, 0.08);
+}
+
+.status-select.status-in_progress {
+  border-color: #2f80ed;
+  color: #2f80ed;
+  background: rgba(47, 128, 237, 0.08);
+}
+
+.status-select.status-done {
+  border-color: #27ae60;
+  color: #27ae60;
+  background: rgba(39, 174, 96, 0.08);
+}
+
+@media (max-width: 576px) {
+  .requests-hero h1 { font-size: 1.6rem; }
+  .requests-message-cell { max-width: 160px; }
+}

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.services-page {
+  min-height: calc(100vh - 80px);
+  background-color: #fcfcfc;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.services-hero {
+  background-color: #0f1b2e;
+  background-image:
+    linear-gradient(rgba(232, 147, 15, 0.10) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 147, 15, 0.10) 1px, transparent 1px);
+  background-size: 36px 36px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.services-hero h1 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 0.6rem;
+}
+
+.services-hero p {
+  color: #c4cbd8;
+  font-size: 1.05rem;
+  max-width: 600px;
+}
+
+.services-container {
+  padding: 4rem 0;
+}
+
+.search-white-block {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.search-form-flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-input-field {
+  flex: 1;
+  background-color: #eee;
+  border: none;
+  padding: 14px 20px;
+  font-size: 15px;
+  border-radius: 10px;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.search-input-field:focus {
+  background-color: #f9f9f9;
+  box-shadow: inset 0 0 0 2px rgba(232, 147, 15, 0.2);
+}
+
+.search-find-btn {
+  background-color: #e8930f;
+  color: #fff;
+  border: none;
+  padding: 14px 35px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search-find-btn:hover {
+  background-color: #c97a00;
+  box-shadow: 0 4px 12px rgba(232, 147, 15, 0.3);
+}
+
+.category-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px 10px 6px;
+}
+
+.category-chip {
+  background: #f0f2f5;
+  border: 1px solid transparent;
+  color: #16213e;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.category-chip:hover {
+  background: #e6e9ee;
+}
+
+.category-chip.active {
+  background: #16213e;
+  color: #fff;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.empty-services-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.empty-services-content {
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 650px;
+  padding: 3rem 2.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.empty-services-icon {
+  font-size: 4.5rem;
+  color: #e8930f;
+  opacity: 0.7;
+  margin-bottom: 1.2rem;
+}
+
+.empty-services-content h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.empty-services-content p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .services-hero { height: 220px; }
+  .services-hero h1 { font-size: 2.5rem; }
+  .services-container { padding: 3rem 0; }
+}
+
+@media (max-width: 768px) {
+  .services-hero { height: 200px; }
+  .services-hero h1 { font-size: 2rem; }
+  .services-container { padding: 2rem 0; }
+  .search-white-block { margin: 0 auto 2.5rem auto; padding: 8px; }
+  .search-form-flex { flex-direction: column; }
+  .search-find-btn { width: 100%; }
+  .services-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
+  .empty-services-content { padding: 2rem 1.5rem; max-width: 90%; }
+  .empty-services-content h2 { font-size: 1.5rem; }
+  .empty-services-content p { max-width: 100%; font-size: 13px; }
+}
+
+@media (max-width: 576px) {
+  .services-hero { height: 180px; }
+  .services-hero h1 { font-size: 1.6rem; }
+  .services-hero p { font-size: 0.9rem; }
+  .services-container { padding: 1.5rem 0; }
+  .search-white-block { margin-bottom: 1.5rem; }
+  .search-input-field { padding: 12px 15px; font-size: 13px; }
+  .search-find-btn { padding: 10px 20px; font-size: 12px; }
+  .services-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+  .empty-services-content { padding: 1.5rem; }
+  .empty-services-icon { font-size: 3.5rem; }
+  .empty-services-content h2 { font-size: 1.3rem; }
+}

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.form-bg {
+  min-height: calc(100vh - 80px);
+  background-color: #0f1b2e;
+  background-image:
+    linear-gradient(rgba(232, 147, 15, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232, 147, 15, 0.08) 1px, transparent 1px);
+  background-size: 36px 36px;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.glass-form {
+  background: rgba(255, 255, 255, 0.97);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.glass-form h2 {
+  text-align: center;
+  color: #16213e;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 12px 15px;
+  font-size: 14px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+  color: #333;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 0 2px rgba(232, 147, 15, 0.3);
+}
+
+.form-input[type="number"]::-webkit-outer-spin-button,
+.form-input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-input.area {
+  min-height: 120px;
+  resize: none;
+}
+
+.form-input.area::-webkit-scrollbar {
+  display: none;
+}
+.form-input.area {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.file-box {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blue-btn {
+  background-color: #e8930f;
+  color: #fff;
+  font-size: 13px;
+  padding: 12px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+.blue-btn:hover:not(:disabled) {
+  background-color: #c97a00;
+  box-shadow: 0 4px 12px rgba(232, 147, 15, 0.4);
+}
+
+.blue-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .form-bg {
+    padding: 2rem 1rem;
+  }
+  .glass-form {
+    padding: 2rem;
+  }
+  .glass-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .form-input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  .blue-btn {
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .glass-form {
+    padding: 1.5rem;
+  }
+  .form-input {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+  .blue-btn {
+    padding: 8px 20px;
+    font-size: 11px;
+  }
+  .file-box {
+    gap: 6px;
+  }
+}
